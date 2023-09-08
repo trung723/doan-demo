@@ -1,4 +1,4 @@
-create database bstore;
+﻿create database bstore;
 use bstore
 go
 DROP DATABASE bstore;
@@ -195,3 +195,88 @@ CREATE TABLE [dbo].[ThamSo](
 (
 	[MaThamSo] ASC
 ));
+-- Tạo ràng buộc cho bảng TheLoaiSach
+ALTER TABLE [dbo].[Sach] WITH CHECK ADD CONSTRAINT [FK_Sach_Sach] FOREIGN KEY([MaTheLoai])
+REFERENCES [dbo].[TheLoaiSach] ([MaTheLoai])
+GO
+ALTER TABLE [dbo].[Sach] CHECK CONSTRAINT [FK_Sach_Sach]
+GO
+
+-- Tạo ràng buộc cho bảng ChiTietBaoCaoCongNo
+ALTER TABLE [dbo].[ChiTietBaoCaoCongNo] WITH CHECK ADD CONSTRAINT [FK_ChiTietBaoCaoCongNo_BaoCaoCongNo] FOREIGN KEY([MaBaoCaoCongNo])
+REFERENCES [dbo].[BaoCaoCongNo] ([MaBaoCaoCongNo])
+GO
+ALTER TABLE [dbo].[ChiTietBaoCaoCongNo] CHECK CONSTRAINT [FK_ChiTietBaoCaoCongNo_BaoCaoCongNo]
+GO
+ALTER TABLE [dbo].[ChiTietBaoCaoCongNo] WITH CHECK ADD CONSTRAINT [FK_ChiTietBaoCaoCongNo_KhachHang] FOREIGN KEY([MaKhachHang])
+REFERENCES [dbo].[KhachHang] ([MaKhachHang])
+GO
+ALTER TABLE [dbo].[ChiTietBaoCaoCongNo] CHECK CONSTRAINT [FK_ChiTietBaoCaoCongNo_KhachHang]
+GO
+
+-- Tạo ràng buộc cho bảng ChiTietBaoCaoTon
+ALTER TABLE [dbo].[ChiTietBaoCaoTon] WITH CHECK ADD CONSTRAINT [FK_ChiTietBaoCaoTon_BaoCaoTon] FOREIGN KEY([MaBaoCaoTon])
+REFERENCES [dbo].[BaoCaoTon] ([MaBaoCaoTon])
+GO
+ALTER TABLE [dbo].[ChiTietBaoCaoTon] CHECK CONSTRAINT [FK_ChiTietBaoCaoTon_BaoCaoTon]
+GO
+ALTER TABLE [dbo].[ChiTietBaoCaoTon] WITH CHECK ADD CONSTRAINT [FK_ChiTietBaoCaoTon_Sach] FOREIGN KEY([MaSach])
+REFERENCES [dbo].[Sach] ([MaSach])
+GO
+ALTER TABLE [dbo].[ChiTietBaoCaoTon] CHECK CONSTRAINT [FK_ChiTietBaoCaoTon_Sach]
+GO
+
+-- Tạo ràng buộc cho bảng ChiTietHoaDon
+ALTER TABLE [dbo].[ChiTietHoaDon] WITH CHECK ADD CONSTRAINT [FK_ChiTietHoaDon_HoaDon] FOREIGN KEY([MaHoaDon])
+REFERENCES [dbo].[HoaDon] ([MaHoaDon])
+GO
+ALTER TABLE [dbo].[ChiTietHoaDon] CHECK CONSTRAINT [FK_ChiTietHoaDon_HoaDon]
+GO
+ALTER TABLE [dbo].[ChiTietHoaDon] WITH CHECK ADD CONSTRAINT [FK_ChiTietHoaDon_Sach] FOREIGN KEY([MaSach])
+REFERENCES [dbo].[Sach] ([MaSach])
+GO
+ALTER TABLE [dbo].[ChiTietHoaDon] CHECK CONSTRAINT [FK_ChiTietHoaDon_Sach]
+GO
+
+-- Tạo ràng buộc cho bảng ChiTietPhieuNhapSach
+ALTER TABLE [dbo].[ChiTietPhieuNhapSach] WITH CHECK ADD CONSTRAINT [FK_ChiTietPhieuNhapSach_PhieuNhapSach] FOREIGN KEY([MaPhieuNhapSach])
+REFERENCES [dbo].[PhieuNhapSach] ([MaPhieuNhapSach])
+GO
+ALTER TABLE [dbo].[ChiTietPhieuNhapSach] CHECK CONSTRAINT [FK_ChiTietPhieuNhapSach_PhieuNhapSach]
+GO
+ALTER TABLE [dbo].[ChiTietPhieuNhapSach] WITH CHECK ADD CONSTRAINT [FK_ChiTietPhieuNhapSach_Sach] FOREIGN KEY([MaSach])
+REFERENCES [dbo].[Sach] ([MaSach])
+GO
+ALTER TABLE [dbo].[ChiTietPhieuNhapSach] CHECK CONSTRAINT [FK_ChiTietPhieuNhapSach_Sach]
+GO
+
+-- Tạo ràng buộc cho bảng HoaDon
+ALTER TABLE [dbo].[HoaDon] WITH CHECK ADD CONSTRAINT [FK_HoaDon_KhachHang] FOREIGN KEY([MaKhachHang])
+REFERENCES [dbo].[KhachHang] ([MaKhachHang])
+GO
+ALTER TABLE [dbo].[HoaDon] CHECK CONSTRAINT [FK_HoaDon_KhachHang]
+GO
+ALTER TABLE [dbo].[HoaDon] WITH CHECK ADD CONSTRAINT [FK_HoaDon_NhanVien] FOREIGN KEY([MaNhanVien])
+REFERENCES [dbo].[NhanVien] ([MaNhanVien])
+GO
+ALTER TABLE [dbo].[HoaDon] CHECK CONSTRAINT [FK_HoaDon_NhanVien]
+GO
+
+-- Tạo ràng buộc cho bảng PhieuNhapSach
+ALTER TABLE [dbo].[PhieuNhapSach] WITH CHECK ADD CONSTRAINT [FK_PhieuNhapSach_NhanVien] FOREIGN KEY([MaNhanVien])
+REFERENCES [dbo].[NhanVien] ([MaNhanVien])
+GO
+ALTER TABLE [dbo].[PhieuNhapSach] CHECK CONSTRAINT [FK_PhieuNhapSach_NhanVien]
+GO
+
+-- Tạo ràng buộc cho bảng PhieuThu
+ALTER TABLE [dbo].[PhieuThu] WITH CHECK ADD CONSTRAINT [FK_PhieuThu_KhachHang] FOREIGN KEY([MaKhachHang])
+REFERENCES [dbo].[KhachHang] ([MaKhachHang])
+GO
+ALTER TABLE [dbo].[PhieuThu] CHECK CONSTRAINT [FK_PhieuThu_KhachHang]
+GO
+ALTER TABLE [dbo].[PhieuThu] WITH CHECK ADD CONSTRAINT [FK_PhieuThu_NhanVien] FOREIGN KEY([MaNhanVien])
+REFERENCES [dbo].[NhanVien] ([MaNhanVien])
+GO
+ALTER TABLE [dbo].[PhieuThu] CHECK CONSTRAINT [FK_PhieuThu_NhanVien]
+GO

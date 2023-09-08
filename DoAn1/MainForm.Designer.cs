@@ -59,7 +59,6 @@
             this.label42 = new System.Windows.Forms.Label();
             this.panel87 = new System.Windows.Forms.Panel();
             this.PN_BanQuyen = new System.Windows.Forms.Panel();
-            this.label87 = new System.Windows.Forms.Label();
             this.panel78 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
             this.BT_AnHienMenu = new System.Windows.Forms.Button();
@@ -946,7 +945,6 @@
             // PN_BanQuyen
             // 
             this.PN_BanQuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(199)))));
-            this.PN_BanQuyen.Controls.Add(this.label87);
             this.PN_BanQuyen.Controls.Add(this.panel78);
             this.PN_BanQuyen.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PN_BanQuyen.Location = new System.Drawing.Point(0, 629);
@@ -954,17 +952,6 @@
             this.PN_BanQuyen.Name = "PN_BanQuyen";
             this.PN_BanQuyen.Size = new System.Drawing.Size(206, 40);
             this.PN_BanQuyen.TabIndex = 1;
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.ForeColor = System.Drawing.Color.White;
-            this.label87.Location = new System.Drawing.Point(2, 22);
-            this.label87.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(140, 13);
-            this.label87.TabIndex = 0;
-            this.label87.Text = "© 2019  Nhóm 4 -NMCNPM";
             // 
             // panel78
             // 
@@ -5052,7 +5039,6 @@
             this.panel86.ResumeLayout(false);
             this.panel86.PerformLayout();
             this.PN_BanQuyen.ResumeLayout(false);
-            this.PN_BanQuyen.PerformLayout();
             this.panel78.ResumeLayout(false);
             this.panel77.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -5276,7 +5262,6 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel87;
         private System.Windows.Forms.Panel PN_BanQuyen;
-        private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Panel panel78;
         private System.Windows.Forms.Panel panel77;
         private System.Windows.Forms.Button BT_AnHienMenu;
