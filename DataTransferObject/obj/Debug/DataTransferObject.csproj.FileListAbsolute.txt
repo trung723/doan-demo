@@ -1,0 +1,6 @@
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataTransferObject\bin\Debug\DataTransferObject.dll
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataTransferObject\bin\Debug\DataTransferObject.pdb
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataTransferObject\obj\Debug\DataTransferObject.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataTransferObject\obj\Debug\DataTransferObject.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataTransferObject\obj\Debug\DataTransferObject.dll
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataTransferObject\obj\Debug\DataTransferObject.pdb

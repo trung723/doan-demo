@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataTransferObject
 {
-    public class Class1
+    internal class PhieuNhapSach
     {
     }
 }

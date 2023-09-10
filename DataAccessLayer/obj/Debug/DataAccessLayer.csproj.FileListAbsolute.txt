@@ -1,0 +1,9 @@
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\bin\Debug\DataTransferObject.dll
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\bin\Debug\DataTransferObject.pdb
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\ADMIN\Desktop\Demo\doan-demo\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
